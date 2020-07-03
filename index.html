@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To do</title>
+</head>
+
+<body class="body" onload="on_refresh()">         
+    <h1 class="display-1">To do </h1>
+    <!-- tasks -->
+<div class="task_con">
+    <p class="begin">No tasks to go</p>
+    <div class="task">
+     
+       
+    </div> 
+</div>
+    <!-- complete -->
+    <div class="complete ">
+            <button class="btn " data-target="#my-collapse" data-toggle="collapse" aria-expanded="false"
+                aria-controls="my-collapse" style="margin: 12px 12px; background: #29c7ac;
+                border: none;
+                outline: none;"> <span>></span> Complete  </button>
+            <div id="my-collapse" class="collapse text-light">
+                    <!-- <div class="task">
+                        <p><input type="checkbox" name="" id="check"  /><label for="check" > Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Similique molestiae asperiores vitae iusto. Nemo ipsum dolor sint esse, harum
+                                laboriosam reiciendis labore quos quia facilis asperiores architecto cumque ipsam doloribus.</label>
+                        </p>
+                    </div> -->
+                   
+            </div>
+    </div>
+    <section class="add">
+        <input type="text" placeholder="Add.." id="i-t" >
+    </section>
+    <br>
+    <div class="shake text-light"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae optio laborum vero fuga magni ad suscipit, nisi est itaque nulla nemo molestiae unde quasi fugit laudantium explicabo soluta, ipsam numquam! </div>
+   
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <!-- personal script -->
+ <script src="script.js"></script>
+</body>
+
+</html>

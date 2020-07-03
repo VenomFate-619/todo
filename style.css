@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Pangolin&family=Yellowtail&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body
+{
+    background-color: #121212; 
+ 
+}
+*::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  *::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #313131;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid  rgba(194, 27, 27, 0.795);  /* creates padding around scroll thumb */
+  }
+h1
+{
+    color: #14ffec;
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    margin: 12px 0;
+    letter-spacing: 6px;
+}
+.task_con
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+/* .task_con::-webkit-scrollbar-thumb {
+    background-color: red;
+    outline: 1px solid slategrey;
+  } */
+.task
+{
+    margin: 7px 12px ;
+    background-color: #1E1E1E;
+   
+}
+p
+{
+    font-family: 'Pangolin', cursive;
+}
+.task p
+{
+    /* border: 1px solid red; */
+    border-radius: 2px;
+    padding: 8px 16px;
+    color: white;
+    vertical-align: middle;
+}
+.task p input
+{
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.begin
+{
+    text-align: center;
+    font-size: 22px;
+    color: #ff6363;
+}
+
+input[type="checkbox"] {
+    z-index: -1;
+    display: none;
+}
+label
+{
+    position: relative;
+    padding-left: 24px;
+    /* vertical-align: middle; */
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+}
+label::before
+{
+    content: "";
+    background: url("img/check-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: 12px 12px;
+    background-color: #7045af;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -7px;
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.1, 1.01);
+
+
+}
+label::after
+{
+    content: "";
+    position: absolute;
+    border: 1px solid #545454;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: -7px;
+
+}
+input[type="checkbox"]:checked + label::before
+{
+    transform: scale(1) rotateZ(0);
+}
+/* add section */
+section
+{
+    transform: translateY(12px);
+    margin: 0px 12px;
+}
+button
+{
+    background: #29c7ac;
+    border: none;
+    outline: none;
+}
+input[type="text"]
+{
+    width: 100%;
+    background: no-repeat;
+    outline: none;
+    border: 1px solid #505c67;
+    color: white;
+    padding: 8px 16px;
+    font-size: 20px;
+}
+
+.complete p{
+    text-decoration: line-through;
+}
+span{
+    display: inline-block;
+    transition: all .3s ease-in;
+}
+.move
+{
+    transform: scale(1.2) rotate(90deg);
+}
